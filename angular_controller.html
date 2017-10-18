@@ -1,0 +1,34 @@
+<!doctype html>
+<html ng-app='myapp'>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular.min.js"></script>
+  </head>
+  <body>
+  <div ng-controller="languages">
+    <p> Select your favourite language</p>
+    <button ng-click="python()">Python</button>
+    <button ng-click="JavaScript()">JavaScript</button>
+    <button ng-click="Cpp()">C++</button>
+    <hr/>
+    Your Favourite language is : {{lan}}
+    </div>
+    <script type="text/javascript">
+
+    var application=angular.module("myapp",[]);
+    application.controller('languages',['$scope',function($scope){
+
+        $scope.lan="None"
+        $scope.python=function(){
+          $scope.lan="python"
+        }
+        $scope.JavaScript=function(){
+          $scope.lan="javascript"
+        }
+        $scope.Cpp=function(){
+          $scope.lan="C++"
+        }
+    }]);
+
+    </script>
+  </body>
+</html>
