@@ -5,13 +5,11 @@
   </head>
   <body>
     <div>
-      <label>Name:</label>
-      <div ng-init='yourName="Angularjs"'>
-      <input type="text" ng-model="yourName">
-      <hr>
-      <h1>Hello {{yourName}}!</h1>
-      </div>
-      <div >{{ 10 + 10 }}</div>
+      <div ng-init="mylan=[{name:'sudhanshu',relation:'brother'},{name:'shivam',relation:'bro'}]">
+      <p ng-repeat="lan in mylan">
+      {{ lan.name }}<br>
+    {{ lan.relation }}<br>
+      </p>
     </div>
   </body>
 </html>
