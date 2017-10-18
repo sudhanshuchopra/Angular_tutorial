@@ -3,10 +3,10 @@ app.config(function($routeProvider){
 
 	$routeProvider
 	.when('/',{
-		template:"hey man"
+		template:"igiubujbkjnjkn"
 	})
 	.when('/bro',{
-		template:"having fun"
+		templateUrl:"dummy.html"
 	})
 	.otherwise({
 		redirectTo:'/'
